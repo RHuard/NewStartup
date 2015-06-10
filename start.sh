@@ -15,7 +15,9 @@ $INSTALL"terminator -y"
 $INSTALL"compiz compiz-core compiz-gnome compiz-plugins-default compizconfig-settings-manager -y"
 $INSTALL"guake -y"
 $INSTALL"zsh -y"
+$INSTALL"dia -y"
 $INSTALL"firefox -y"
+$INSTALL"curl -y"
 $INSTALL"chromium-browser -y"
 $INSTALL"nautilus-dropbox -y"
 $INSTALL"arduino -y"
@@ -30,21 +32,17 @@ if [ ! -d ~/Downloads ]; then
     mkdir ~/Downloads
 fi
 
-firfox https://dl.google.com/dl/android/studio/ide-zips/1.2.1.1/android-studio-ide-141.1903250-linux.zip
+curl https://dl.google.com/dl/android/studio/ide-zips/1.2.1.1/android-studio-ide-141.1903250-linux.zip
 cp ~/Downloads/android-studio-ide-141.1903250-linux.zip ~/Programs/android-studio.zip
 unzip ~/Programs/android-studio.zip android-studo
 chmod +x ~/Programs/android-studio/bin/studio.sh
 
-firefox http://sourceforge.net/projects/violet/files/violetumleditor/2.1.0/violetumleditor-2.1.0.jar/download
-cp ~/Downloads/violetumleditor-2.1.o.jar ~/Programs/violetuml.jar
-
-firefox https://download.jetbrains.com/idea/ideaIC-14.1.2.tar.gz
+curl https://download.jetbrains.com/idea/ideaIC-14.1.2.tar.gz
 cp ~Downloads/ideaIC-14.1.2.tar.gz ~/Programs/ideaIC-14.1.2.tar.gz
 tar -xfz ideaIC-14.1.2.tar.gz idea-ide idea-ide
 chmod +x ~/Programs/idea-ide/bin/idea.sh
 
 cp commands/android-ide /usr/local/sbin
-cp commands/idea-ide /usr/local/sbin
 cp commands/violetunl /usr/local/sbin
 
 rm -rf ~/Programs/*.zip
