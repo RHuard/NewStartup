@@ -21,6 +21,8 @@ $INSTALL"curl -y"
 $INSTALL"chromium-browser -y"
 $INSTALL"nautilus-dropbox -y"
 $INSTALL"arduino -y"
+$INSTALL"cowsay -y"
+$INSTALL"synapse -y"
 $INSTALL"steam -y"
 
 #I always have these directories for organization. So if they are not made make them
