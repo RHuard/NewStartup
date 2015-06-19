@@ -1,0 +1,20 @@
+[global_config]
+[keybindings]
+go_up = <Alt>K
+go_down = <Alt>J
+go_left = <Alt>H
+go_right = <Alt>L
+[profiles]
+  [[default]]
+    use_system_font = False
+    font = DejaVu Sans Mono 10
+    background_image = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
