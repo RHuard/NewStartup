@@ -1,5 +1,12 @@
 #PLEASE NOTE: because you have this, I assume you have git installed. If not you will need to have git istalled before running this
 
+#test if paramter 1 exists as a directory, if it does not then make it
+function make_dir(){
+    if [ ! -d $1 ]; then
+        mkdir $1
+    fi
+}
+
 INSTALL="sudo apt-get install "
 
 #INSTALL PROGRAMS AND TOOLS
@@ -26,24 +33,16 @@ $INSTALL"cowsay -y"
 $INSTALL"synapse -y"
 $INSTALL"steam -y"
 
-if [ ! -d ~/.config ]; then
-    mkdir ~/.config
-fi
-
-if [ ! -d ~/.config/terminator ]; then
-    mkdir ~/.config/terminator
-fi
-
+#set up config files
+#terminator
+mk_dir ~/.config
+mk_dir ~/.config/terminator
 cp ./config/terminator/config ~/.config/terminator/config
 
 #I always have these directories for organization. So if they are not made make them
-if [ ! -d ~/Programs ]; then
-    mkdir ~/Programs
-fi
+mk_dir ~/Programs
 
-if [ ! -d ~/Downloads ]; then
-    mkdir ~/Downloads
-fi
+mk_dir ~/Downloads
 
 curl https://dl.google.com/dl/android/studio/ide-zips/1.2.1.1/android-studio-ide-141.1903250-linux.zip
 cp ~/Downloads/android-studio-ide-141.1903250-linux.zip ~/Programs/android-studio.zip
@@ -65,9 +64,7 @@ rm -rf ~/Programs/*.tar.gz
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 #AUTOMATICALLY SET UP RCs
 #check to see if Documents exists:
-if [ ! -d ~/Documents ]; then
-    mkdir ~/Documents #if necessary make it
-fi
+mk_dir ~/Documents
 
 git clone git@github.com:RHuard/RCs.git ~/Documents
 chmod +x ~/Documents/RCs/firsttimesetup.sh
