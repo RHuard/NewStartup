@@ -26,6 +26,16 @@ $INSTALL"cowsay -y"
 $INSTALL"synapse -y"
 $INSTALL"steam -y"
 
+if [ ! -d ~/.config ]; then
+    mkdir ~/.config
+fi
+
+if [ ! -d ~/.config/terminator ]; then
+    mkdir ~/.config/terminator
+fi
+
+cp ./config/terminator/config ~/.config/terminator/config
+
 #I always have these directories for organization. So if they are not made make them
 if [ ! -d ~/Programs ]; then
     mkdir ~/Programs
