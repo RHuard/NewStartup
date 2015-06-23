@@ -31,6 +31,7 @@ $INSTALL"ranger -y"
 $INSTALL"arduino -y"
 $INSTALL"cowsay -y"
 $INSTALL"synapse -y"
+$INSTALL"figlet -y"
 $INSTALL"steam -y"
 
 #set up config files
@@ -54,14 +55,21 @@ cp ~Downloads/ideaIC-14.1.2.tar.gz ~/Programs/ideaIC-14.1.2.tar.gz
 tar -xfz ideaIC-14.1.2.tar.gz idea-ide idea-ide
 chmod +x ~/Programs/idea-ide/bin/idea.sh
 
-cp commands/android-ide /usr/local/sbin
-cp commands/violetunl /usr/local/sbin
+#set up commands
+chmod +x ./commands/android-ide
+sudo cp commands/android-ide /usr/local/sbin/android-ide
+chmod +x ./commands/idea-ide
+sudo cp commands/idea-ide /usr/local/sbin/idea-ide
+chmod +x ./commands/clock
+sudo cp commands/clock /usr/local/sbin/clock
 
+#clean up idea setup
 rm -rf ~/Programs/*.zip
 rm -rf ~/Programs/*.tar.gz
 
 #isntall oh my zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
 #AUTOMATICALLY SET UP RCs
 #check to see if Documents exists:
 mk_dir ~/Documents
