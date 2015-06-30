@@ -34,12 +34,6 @@ $INSTALL"synapse -y"
 $INSTALL"figlet -y"
 $INSTALL"steam -y"
 
-#set up config files
-#terminator
-mk_dir ~/.config
-mk_dir ~/.config/terminator
-cp ./config/terminator/config ~/.config/terminator/config
-
 #I always have these directories for organization. So if they are not made make them
 mk_dir ~/Programs
 
