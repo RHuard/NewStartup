@@ -23,6 +23,9 @@ $INSTALL"compiz compiz-core compiz-gnome compiz-plugins-default compizconfig-set
 $INSTALL"guake -y"
 $INSTALL"zsh -y"
 $INSTALL"dia -y"
+$INSTALL"ack-grep"
+#set ack-grep to use the name ack
+sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 $INSTALL"firefox -y"
 $INSTALL"curl -y"
 $INSTALL"chromium-browser -y"
