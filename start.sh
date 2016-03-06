@@ -38,32 +38,15 @@ $INSTALL"synapse -y"
 $INSTALL"figlet -y"
 $INSTALL"steam -y"
 
+#install how2
+$install"install nodejs npm -y"
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+npm install -g how2
+
 #I always have these directories for organization. So if they are not made make them
 mk_dir ~/Programs
 
 mk_dir ~/Downloads
-
-curl https://dl.google.com/dl/android/studio/ide-zips/1.2.1.1/android-studio-ide-141.1903250-linux.zip
-cp ~/Downloads/android-studio-ide-141.1903250-linux.zip ~/Programs/android-studio.zip
-unzip ~/Programs/android-studio.zip android-studo
-chmod +x ~/Programs/android-studio/bin/studio.sh
-
-curl https://download.jetbrains.com/idea/ideaIC-14.1.2.tar.gz
-cp ~Downloads/ideaIC-14.1.2.tar.gz ~/Programs/ideaIC-14.1.2.tar.gz
-tar -xfz ideaIC-14.1.2.tar.gz idea-ide idea-ide
-chmod +x ~/Programs/idea-ide/bin/idea.sh
-
-#set up commands
-chmod +x ./commands/android-ide
-sudo cp commands/android-ide /usr/local/sbin/android-ide
-chmod +x ./commands/idea-ide
-sudo cp commands/idea-ide /usr/local/sbin/idea-ide
-chmod +x ./commands/clock
-sudo cp commands/clock /usr/local/sbin/clock
-
-#clean up idea setup
-rm -rf ~/Programs/*.zip
-rm -rf ~/Programs/*.tar.gz
 
 #isntall oh my zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
@@ -86,4 +69,4 @@ echo "run dropbox and get that set that up"
 echo "steam games"
 echo "ad block and thumbnail zoom for browsers"
 echo "set guake to run in start up"
-echo "make sure android studio, idea idea and violetuml are updated versions"
+echo "install latest android studio and idea-ide"
