@@ -32,15 +32,11 @@ $INSTALL"chromium-browser -y"
 $INSTALL"nautilus-dropbox -y"
 $INSTALL"nemo"
 $INSTALL"ranger -y"
+$INSTALL"synapse -y"
 $INSTALL"arduino -y"
 $INSTALL"cowsay -y"
 $INSTALL"figlet -y"
 $INSTALL"steam -y"
-
-#install synapse
-sudo apt-add repository ppa:synapse-core/ppa
-sudo apt-get update
-$INSTALL"synapse -y"
 
 #install how2
 $install"install nodejs npm -y"
