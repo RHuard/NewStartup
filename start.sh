@@ -34,9 +34,13 @@ $INSTALL"nemo"
 $INSTALL"ranger -y"
 $INSTALL"arduino -y"
 $INSTALL"cowsay -y"
-$INSTALL"synapse -y"
 $INSTALL"figlet -y"
 $INSTALL"steam -y"
+
+#install synapse
+sudo apt-add repository ppa:synapse-core/ppa
+sudo apt-get update
+$INSTALL"synapse -y"
 
 #install how2
 $install"install nodejs npm -y"
