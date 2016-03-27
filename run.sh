@@ -1,0 +1,1 @@
+./start.sh | tee output
