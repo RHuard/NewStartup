@@ -73,6 +73,8 @@ chmod +x ~/RCs/rcsetup.sh
 
 ~/Documents/RCs/firsttimesetup.sh
 
+chsh -s /bin/zsh
+
 sudo apt-get update && sudo apt-get upgrade -y
 #INFO FOR SETUP STUFF (Check List)
 echo "TODO:"
