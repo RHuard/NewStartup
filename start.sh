@@ -38,6 +38,11 @@ $INSTALL"cowsay -y"
 $INSTALL"figlet -y"
 $INSTALL"steam -y"
 
+#pip
+$INSTALL"python-pip python-dev build-essential"
+sudo pip install --upgrade pip
+sudo pip install --upgrade virtualenv
+
 #install how2
 $install"install nodejs npm -y"
 sudo ln -s /usr/bin/nodejs /usr/bin/node
