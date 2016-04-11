@@ -38,6 +38,7 @@ $INSTALL"synapse" -y
 $INSTALL"arduino" -y
 $INSTALL"cowsay" -y
 $INSTALL"figlet" -y
+$INSTALL"dwb" -y
 
 if [ "$1" = "-h" ]; then
     $INSTALL"steam" -y
