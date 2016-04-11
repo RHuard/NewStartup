@@ -74,7 +74,8 @@ chmod +x ~/Documents/RCs/rcsetup.sh
 #INFO FOR SETUP STUFF (Check List)
 echo "TODO:"
 echo "setup zsh as default shell"
-echo "run dropbox and get that set that up"
+echo "dropbox setup"
+echo "anonymous pro"
 echo "set guake and synapse to run in start up"
 
 if [ "$1" = "-h" ]; then
