@@ -1,1 +1,1 @@
-./start.sh | tee output
+~/NewStartup/start.sh | tee output
