@@ -7,6 +7,8 @@ function make_dir(){
     fi
 }
 
+sudo apt-get update
+
 INSTALL="sudo apt-get install "
 
 #INSTALL PROGRAMS AND TOOLS
