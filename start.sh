@@ -36,7 +36,10 @@ $INSTALL"synapse -y"
 $INSTALL"arduino -y"
 $INSTALL"cowsay -y"
 $INSTALL"figlet -y"
-$INSTALL"steam -y"
+
+if [ "$1" = "-h" ]; then
+    $INSTALL"steam -y"
+fi
 
 #pip
 $INSTALL"python-pip python-dev build-essential"
@@ -48,7 +51,7 @@ $install"install nodejs npm -y"
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 npm install -g how2
 
-#I always have these directories for organization. So if they are not made make them
+#Make these if not already exist
 mk_dir ~/Programs
 
 mk_dir ~/Downloads
@@ -70,8 +73,12 @@ chmod +x ~/Documents/RCs/rcsetup.sh
 "sudo apt-get update && sudo apt-get upgrade -y"
 #INFO FOR SETUP STUFF (Check List)
 echo "TODO:"
+echo "setup zsh as default shell"
 echo "run dropbox and get that set that up"
-echo "steam games"
-echo "ad block and thumbnail zoom for browsers"
-echo "set guake to run in start up"
-echo "install latest android studio and idea-ide"
+echo "set guake and synapse to run in start up"
+
+if [ "$1" = "-h" ]; then
+    echo "ad block and thumbnail zoom for browsers"
+    echo "steam games"
+    echo "install latest android studio and idea-ide"
+fi
