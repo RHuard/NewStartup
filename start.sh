@@ -78,7 +78,6 @@ chsh -s /bin/zsh
 sudo apt-get update && sudo apt-get upgrade -y
 #INFO FOR SETUP STUFF (Check List)
 echo "TODO:"
-echo "setup zsh as default shell"
 echo "dropbox setup"
 echo "anonymous pro"
 echo "set guake and synapse to run in start up"
