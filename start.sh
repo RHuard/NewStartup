@@ -12,44 +12,44 @@ sudo apt-get update
 INSTALL="sudo apt-get install "
 
 #INSTALL PROGRAMS AND TOOLS
-$INSTALL"build-essential -y"
-$INSTALL"clang -y"
-$INSTALL"python2.7 -y"
-$INSTALL"python3.4 -y"
-$INSTALL"gcc -y"
-$INSTALL"bcc -y"
-$INSTALL"cmake -y"
-$INSTALL"vim -y"
-$INSTALL"terminator -y"
-$INSTALL"compiz compiz-core compiz-gnome compiz-plugins-default compizconfig-settings-manager -y"
-$INSTALL"guake -y"
-$INSTALL"zsh -y"
-$INSTALL"dia -y"
-$INSTALL"ack-grep"
+$INSTALL"build-essential" -y
+$INSTALL"clang" -y
+$INSTALL"python2.7" -y
+$INSTALL"python3.4" -y
+$INSTALL"gcc" -y
+$INSTALL"bcc" -y
+$INSTALL"cmake" -y
+$INSTALL"vim" -y
+$INSTALL"terminator" -y
+$INSTALL"compiz compiz-core compiz-gnome compiz-plugins-default compizconfig-settings-manager" -y
+$INSTALL"guake" -y
+$INSTALL"zsh" -y
+$INSTALL"dia" -y
+$INSTALL"ack-grep" -y
 #set ack-grep to use the name ack
 sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
-$INSTALL"firefox -y"
-$INSTALL"curl -y"
-$INSTALL"chromium-browser -y"
-$INSTALL"nautilus-dropbox -y"
-$INSTALL"nemo"
-$INSTALL"ranger -y"
-$INSTALL"synapse -y"
-$INSTALL"arduino -y"
-$INSTALL"cowsay -y"
-$INSTALL"figlet -y"
+$INSTALL"firefox" -y
+$INSTALL"curl" -y
+$INSTALL"chromium-browser" -y
+$INSTALL"nautilus-dropbox" -y
+$INSTALL"nemo" -y
+$INSTALL"ranger" -y
+$INSTALL"synapse" -y
+$INSTALL"arduino" -y
+$INSTALL"cowsay" -y
+$INSTALL"figlet" -y
 
 if [ "$1" = "-h" ]; then
-    $INSTALL"steam -y"
+    $INSTALL"steam" -y
 fi
 
 #pip
-$INSTALL"python-pip python-dev build-essential"
+$INSTALL"python-pip python-dev build-essential" -y
 sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv
 
 #install how2
-$install"install nodejs npm -y"
+$install"install nodejs npm" -y
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 npm install -g how2
 
@@ -72,7 +72,7 @@ chmod +x ~/Documents/RCs/rcsetup.sh
 
 ~/Documents/RCs/firsttimesetup.sh
 
-"sudo apt-get update && sudo apt-get upgrade -y"
+sudo apt-get update && sudo apt-get upgrade -y
 #INFO FOR SETUP STUFF (Check List)
 echo "TODO:"
 echo "setup zsh as default shell"
