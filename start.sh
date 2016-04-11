@@ -71,7 +71,7 @@ chmod +x ~/RCs/firsttimesetup.sh
 chmod +x ~/RCs/rcsetup.sh
 
 
-~/Documents/RCs/firsttimesetup.sh
+~/RCs/firsttimesetup.sh
 
 chsh -s /bin/zsh
 
