@@ -34,7 +34,6 @@ $INSTALL"chromium-browser" -y
 $INSTALL"nautilus-dropbox" -y
 $INSTALL"nemo" -y
 $INSTALL"ranger" -y
-$INSTALL"synapse" -y
 $INSTALL"arduino" -y
 $INSTALL"cowsay" -y
 $INSTALL"figlet" -y
@@ -43,6 +42,11 @@ $INSTALL"dwb" -y
 if [ "$1" = "-h" ]; then
     $INSTALL"steam" -y
 fi
+
+#synapse
+sudo add-apt-repository ppa:synapse-core/ppa
+sudo apt-get update
+$INSTALL"synapse" -y
 
 #pip
 $INSTALL"python-pip python-dev build-essential" -y
