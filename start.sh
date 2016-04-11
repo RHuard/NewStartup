@@ -81,6 +81,7 @@ echo "TODO:"
 echo "dropbox setup"
 echo "anonymous pro"
 echo "set guake and synapse to run in start up"
+echo "install ROS and Docker"
 
 if [ "$1" = "-h" ]; then
     echo "ad block and thumbnail zoom for browsers"
