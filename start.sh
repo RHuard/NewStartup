@@ -66,9 +66,9 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 #check to see if Documents exists:
 make_dir ~/Documents
 
-git clone git@github.com:rhuard/RCs.git ~/Documents
-chmod +x ~/Documents/RCs/firsttimesetup.sh
-chmod +x ~/Documents/RCs/rcsetup.sh
+git clone git@github.com:rhuard/RCs.git ~/
+chmod +x ~/RCs/firsttimesetup.sh
+chmod +x ~/RCs/rcsetup.sh
 
 
 ~/Documents/RCs/firsttimesetup.sh
