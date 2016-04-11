@@ -55,16 +55,16 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 npm install -g how2
 
 #Make these if not already exist
-mk_dir ~/Programs
+make_dir ~/Programs
 
-mk_dir ~/Downloads
+make_dir ~/Downloads
 
 #isntall oh my zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 #AUTOMATICALLY SET UP RCs
 #check to see if Documents exists:
-mk_dir ~/Documents
+make_dir ~/Documents
 
 git clone git@github.com:rhuard/RCs.git ~/Documents
 chmod +x ~/Documents/RCs/firsttimesetup.sh
