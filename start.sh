@@ -1,4 +1,6 @@
-#PLEASE NOTE: because you have this, I assume you have git installed. If not you will need to have git istalled before running this
+#Requires git to run, not installed because if you have this then I assume you have git
+
+#TODO: figure out how to do switches better so can have more options
 
 #test if paramter 1 exists as a directory, if it does not then make it
 function make_dir(){
@@ -31,7 +33,6 @@ sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 $INSTALL"firefox" -y
 $INSTALL"curl" -y
 $INSTALL"chromium-browser" -y
-$INSTALL"nautilus-dropbox" -y
 $INSTALL"nemo" -y
 $INSTALL"ranger" -y
 $INSTALL"arduino" -y
@@ -40,6 +41,7 @@ $INSTALL"figlet" -y
 $INSTALL"dwb" -y
 
 if [ "$1" = "-h" ]; then
+    $INSTALL"nautilus-dropbox" -y
     $INSTALL"steam" -y
 fi
 
