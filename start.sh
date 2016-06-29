@@ -40,6 +40,7 @@ $INSTALL"cowsay" -y
 $INSTALL"figlet" -y
 $INSTALL"dwb" -y
 $INSTALL"gnome-do" -y
+$INSTALL"exuberant-ctags" -y
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
