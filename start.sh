@@ -83,7 +83,8 @@ sudo apt-get update && sudo apt-get upgrade -y
 echo "TODO:"
 echo "dropbox setup"
 echo "anonymous pro"
-echo "set guake and synapse to run in start up"
+echo "set guake and gnome-do to run in start up"
+echo "install Taglist and other Vim plugins"
 echo "install ROS and Docker"
 
 if [ "$1" = "-h" ]; then
