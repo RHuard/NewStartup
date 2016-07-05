@@ -48,6 +48,7 @@ $INSTALL"gnome-do" -y
 $INSTALL"exuberant-ctags" -y
 $INSTALL"colordiff" -y
 $INSTALL"diffuse" -y
+$INSTALL"source-highlight" -y
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
