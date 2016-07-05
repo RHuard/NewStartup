@@ -9,6 +9,11 @@ function make_dir(){
     fi
 }
 
+#TODO: test this function
+function install(){
+    $INSTALL $1 -y
+}
+
 sudo apt-get update
 
 INSTALL="sudo apt-get install "
@@ -41,6 +46,8 @@ $INSTALL"figlet" -y
 $INSTALL"dwb" -y
 $INSTALL"gnome-do" -y
 $INSTALL"exuberant-ctags" -y
+$INSTALL"colordiff" -y
+$INSTALL"diffuse" -y
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
