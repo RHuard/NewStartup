@@ -81,6 +81,7 @@ chsh -s /bin/zsh
 sudo apt-get update && sudo apt-get upgrade -y
 #INFO FOR SETUP STUFF (Check List)
 echo "TODO:"
+echo "setup termniator layouts"
 echo "dropbox setup"
 echo "anonymous pro"
 echo "set guake and gnome-do to run in start up"
