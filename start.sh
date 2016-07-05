@@ -57,6 +57,9 @@ $install"install nodejs npm" -y
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 npm install -g how2
 
+#install howdoi
+pip install howdoi
+
 #Make these if not already exist
 make_dir ~/Programs
 
