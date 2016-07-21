@@ -6,7 +6,7 @@ function make_dir(){
 
 #TODO: test this function
 function install(){
-    $INSTALL $1 -y
+    $INSTALL $1
 }
 
 $INSTALL="sudo Zypper install"
@@ -20,25 +20,35 @@ $INSTALL"gcc"
 $INSTALL"dev86" #bcc
 $INSTALL"cmake"
 $INSTALL"vim"
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
-$INSTALL""
+$INSTALL"terminator"
+$INSTALL"guake"
+$INSTALL"zsh"
+$INSTALL"ack"
+$INSTALL"firefox"
+$INSTALL"curl"
+$INSTALL"chromium-browser"
+$INSTALL"nemo"
+$INSTALL"arduino"
+$INSTALL"cowsay"
+$INSTALL"figlet"
+$INSTALL"gnome-do"
+$INSTALL"ctags"
+$INSTALL"colordiff"
+$INSTALL"source-highlight"
+#Figure out how to use Zypper for Ranger, dwb, diffuse
 
-v
-$INSTALL""
+if [ "$1" = "-h" ]; then
+    $INSTALL"nautilus-dropbox" -y
+    $INSTALL"steam" -y
+fi
+
+$INSTALL"python-pip"
+
+
+git clone https://github.com/rhuard/RCs.git ~/RCs
+chmod +x ~/RCs/firsttimesetup.sh
+chmod +x ~/RCs/rcsetup.sh
+
+~/RCs/firsttimesetup.sh
+
+chsh -s /bin/zsh
