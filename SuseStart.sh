@@ -9,6 +9,8 @@ function install(){
     $INSTALL $1
 }
 
+zypper refresh
+
 $INSTALL="sudo Zypper install"
 
 #Install software
