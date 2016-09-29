@@ -89,6 +89,13 @@ chmod +x ~/RCs/rcsetup.sh
 
 chsh -s /bin/zsh
 
+#swap capslock and escape because ergonomics
+xmodmap -e "remove Lock = Caps_Lock"
+xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
+xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+xmodmap -pke > ~/.xmodmap
+xmodmap -e "remove Lock = Caps_Lock"
+
 sudo apt-get update && sudo apt-get upgrade -y
 #INFO FOR SETUP STUFF (Check List)
 echo "TODO:"
