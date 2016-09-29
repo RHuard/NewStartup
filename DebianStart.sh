@@ -3,7 +3,7 @@
 #TODO: figure out how to do switches better so can have more options
 
 #test if paramter 1 exists as a directory, if it does not then make it
-function make_dir(){
+function make_dir(){ #TODO: replace with mkdir -p
     if [ ! -d $1 ]; then
         mkdir $1
     fi
