@@ -28,23 +28,17 @@ $INSTALL"bcc" -y
 $INSTALL"cmake" -y
 $INSTALL"vim" -y
 $INSTALL"terminator" -y
-$INSTALL"compiz compiz-core compiz-gnome compiz-plugins-default compizconfig-settings-manager" -y
-$INSTALL"guake" -y
 $INSTALL"zsh" -y
-$INSTALL"dia" -y
 $INSTALL"ack-grep" -y
 #set ack-grep to use the name ack
 sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 $INSTALL"firefox" -y
 $INSTALL"curl" -y
 $INSTALL"chromium-browser" -y
-$INSTALL"nemo" -y
 $INSTALL"ranger" -y
 $INSTALL"arduino" -y
 $INSTALL"cowsay" -y
 $INSTALL"figlet" -y
-$INSTALL"dwb" -y
-$INSTALL"gnome-do" -y
 $INSTALL"exuberant-ctags" -y
 $INSTALL"colordiff" -y
 $INSTALL"diffuse" -y
