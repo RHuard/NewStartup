@@ -26,6 +26,7 @@ $INSTALL"python3.4" -y
 $INSTALL"gcc" -y
 $INSTALL"bcc" -y
 $INSTALL"cmake" -y
+$INSTALL"i3" -y
 $INSTALL"vim" -y
 $INSTALL"terminator" -y
 $INSTALL"zsh" -y
