@@ -76,10 +76,6 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 make_dir ~/Documents
 
 git clone https://github.com/rhuard/RCs.git ~/RCs
-chmod +x ~/RCs/firsttimesetup.sh
-chmod +x ~/RCs/rcsetup.sh
-
-
 ~/RCs/firsttimesetup.sh
 
 chsh -s /bin/zsh
