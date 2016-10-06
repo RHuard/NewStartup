@@ -42,6 +42,8 @@ if [ "$1" = "-h" ]; then
 fi
 
 $INSTALL"python-pip"
+sudo pip install --upgrade pip
+sudo pip install --upgrade virtualenv
 
 #Make these if not already exist
 make_dir ~/Programs
