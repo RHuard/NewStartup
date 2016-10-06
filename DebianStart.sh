@@ -55,14 +55,6 @@ $INSTALL"python-pip python-dev build-essential" -y
 sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv
 
-#install how2
-$install"install nodejs npm" -y
-sudo ln -s /usr/bin/nodejs /usr/bin/node
-sudo npm install -g how2
-
-#install howdoi
-sudo pip install howdoi
-
 #Make these if not already exist
 make_dir ~/Programs
 
@@ -86,19 +78,3 @@ xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
 xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 xmodmap -pke > ~/.xmodmap
 xmodmap -e "remove Lock = Caps_Lock"
-
-sudo apt-get update && sudo apt-get upgrade -y
-#INFO FOR SETUP STUFF (Check List)
-echo "TODO:"
-echo "setup termniator layouts"
-echo "dropbox setup"
-echo "anonymous pro"
-echo "set guake and gnome-do to run in start up"
-echo "install Taglist and other Vim plugins"
-echo "install ROS and Docker"
-
-if [ "$1" = "-h" ]; then
-    echo "ad block and thumbnail zoom for browsers"
-    echo "steam games"
-    echo "install latest android studio and idea-ide"
-fi
