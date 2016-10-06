@@ -35,7 +35,6 @@ $INSTALL"figlet"
 $INSTALL"ctags"
 $INSTALL"colordiff"
 $INSTALL"source-highlight"
-#Figure out how to use Zypper for Ranger, dwb, diffuse
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
@@ -44,11 +43,27 @@ fi
 
 $INSTALL"python-pip"
 
+#Make these if not already exist
+make_dir ~/Programs
+
+make_dir ~/Downloads
+
+#isntall oh my zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+#AUTOMATICALLY SET UP RCs
+#check to see if Documents exists:
+make_dir ~/Documents
 
 git clone https://github.com/rhuard/RCs.git ~/RCs
-chmod +x ~/RCs/firsttimesetup.sh
-chmod +x ~/RCs/rcsetup.sh
-
 ~/RCs/firsttimesetup.sh
 
 chsh -s /bin/zsh
+
+
+#swap capslock and escape because ergonomics
+xmodmap -e "remove Lock = Caps_Lock"
+xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
+xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+xmodmap -pke > ~/.xmodmap
+xmodmap -e "remove Lock = Caps_Lock"
