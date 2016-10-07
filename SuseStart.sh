@@ -28,6 +28,7 @@ $INSTALL"ctags"
 $INSTALL"colordiff"
 $INSTALL"source-highlight"
 $INSTALL"dict dictd dict-gcide"
+$INSTALL "dict-moby-thesaurus"
 $INSTALL"aspell"
 
 if [ "$1" = "-h" ]; then
