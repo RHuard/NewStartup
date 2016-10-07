@@ -1,19 +1,6 @@
 #Requires git to run, not installed because if you have this then I assume you have git
 
 #TODO: figure out how to do switches better so can have more options
-
-#test if paramter 1 exists as a directory, if it does not then make it
-function make_dir(){ #TODO: replace with mkdir -p
-    if [ ! -d $1 ]; then
-        mkdir $1
-    fi
-}
-
-#TODO: test this function
-function install(){
-    $INSTALL $1 -y
-}
-
 sudo apt-get update
 
 INSTALL="sudo apt-get install "
@@ -56,19 +43,19 @@ sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv
 
 #Make these if not already exist
-make_dir ~/Programs
+mkdir -p $HOME/Programs
 
-make_dir ~/Downloads
+mkdir -p $HOME/Downloads
 
 #isntall oh my zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 #AUTOMATICALLY SET UP RCs
 #check to see if Documents exists:
-make_dir ~/Documents
+mkdir -p $HOME/Documents
 
-git clone https://github.com/rhuard/RCs.git ~/RCs
-~/RCs/firsttimesetup.sh
+git clone https://github.com/rhuard/RCs.git $HOME/RCs
+$HOME/RCs/firsttimesetup.sh
 
 chsh -s /bin/zsh
 
@@ -76,5 +63,5 @@ chsh -s /bin/zsh
 xmodmap -e "remove Lock = Caps_Lock"
 xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
 xmodmap -e "keycode 66 = Escape NoSymbol Escape"
-xmodmap -pke > ~/.xmodmap
+xmodmap -pke > $HOME/.xmodmap
 xmodmap -e "remove Lock = Caps_Lock"
