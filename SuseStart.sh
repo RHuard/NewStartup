@@ -48,9 +48,12 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 #check to see if Documents exists:
 mkdir -p $HOME/Documents
 
-#install my own project
+#install my own projects
 git clone https://github.com/rhuard/ldict.git $HOME/Programs/ldict
 make -f $HOME/Programs/ldict/Makefile install
+
+git clone https://github.com/rhuard/saspell.git $HOME/Programs/saspell
+make -f $HOME/Programs/saspell/Makefile install
 
 #AUTOMATICALLY SET UP RCs
 git clone https://github.com/rhuard/RCs.git $HOME/RCs
