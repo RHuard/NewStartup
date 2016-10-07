@@ -31,6 +31,8 @@ $INSTALL"exuberant-ctags" -y
 $INSTALL"colordiff" -y
 $INSTALL"diffuse" -y
 $INSTALL"source-highlight" -y
+$INSTALL"dict dictd dict-gcide" -y
+$INSTALL"aspell" -y
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
@@ -53,6 +55,10 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 #AUTOMATICALLY SET UP RCs
 #check to see if Documents exists:
 mkdir -p $HOME/Documents
+
+#install my own project
+git clone https://github.com/rhuard/ldict.git $HOME/Programs/ldict
+make -f $HOME/Programs/ldict/Makefile install
 
 git clone https://github.com/rhuard/RCs.git $HOME/RCs
 $HOME/RCs/firsttimesetup.sh
