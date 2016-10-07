@@ -25,6 +25,8 @@ $INSTALL"figlet"
 $INSTALL"ctags"
 $INSTALL"colordiff"
 $INSTALL"source-highlight"
+$INSTALL"dict dictd dict-gcide"
+$INSTALL"aspell"
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
@@ -43,10 +45,14 @@ mkdir -p $HOME/Downloads
 #isntall oh my zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-#AUTOMATICALLY SET UP RCs
 #check to see if Documents exists:
 mkdir -p $HOME/Documents
 
+#install my own project
+git clone https://github.com/rhuard/ldict.git $HOME/Programs/ldict
+make -f $HOME/Programs/ldict/Makefile install
+
+#AUTOMATICALLY SET UP RCs
 git clone https://github.com/rhuard/RCs.git $HOME/RCs
 $HOME/RCs/firsttimesetup.sh
 
