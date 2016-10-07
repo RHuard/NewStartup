@@ -15,6 +15,7 @@ $INSTALL"dev86" #bcc
 $INSTALL"cmake"
 $INSTALL"vim"
 $INSTALL"terminator"
+$INSTALL"git"
 $INSTALL"zsh"
 $INSTALL"ack"
 $INSTALL"firefox"
