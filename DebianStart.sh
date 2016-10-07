@@ -52,7 +52,6 @@ mkdir -p $HOME/Downloads
 #isntall oh my zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-#AUTOMATICALLY SET UP RCs
 #check to see if Documents exists:
 mkdir -p $HOME/Documents
 
@@ -60,6 +59,7 @@ mkdir -p $HOME/Documents
 git clone https://github.com/rhuard/ldict.git $HOME/Programs/ldict
 make -f $HOME/Programs/ldict/Makefile install
 
+#Automatically setup RCs
 git clone https://github.com/rhuard/RCs.git $HOME/RCs
 $HOME/RCs/firsttimesetup.sh
 
