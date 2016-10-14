@@ -31,6 +31,7 @@ $INSTALL"dict dictd dict-gcide"
 $INSTALL "dict-moby-thesaurus"
 $INSTALL"aspell"
 $INSTALL"ctags"
+$INSTALL"feh"
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
