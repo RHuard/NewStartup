@@ -17,6 +17,7 @@ $INSTALL"cmake" -y
 $INSTALL"i3" -y
 $INSTALL"vim" -y
 $INSTALL"terminator" -y
+$INSTALL"tmux" -y
 $INSTALL"git" -y
 $INSTALL"zsh" -y
 $INSTALL"ack-grep" -y
