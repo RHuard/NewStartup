@@ -27,6 +27,7 @@ $INSTALL"firefox" -y
 $INSTALL"curl" -y
 $INSTALL"chromium-browser" -y
 $INSTALL"ranger" -y
+$INSTALL"pylint" -y
 $INSTALL"arduino" -y
 $INSTALL"cowsay" -y
 $INSTALL"figlet" -y
