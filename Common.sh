@@ -32,3 +32,5 @@ xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
 xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 xmodmap -pke > $HOME/.xmodmap
 xmodmap -e "remove Lock = Caps_Lock"
+
+sudo pip install ipython
