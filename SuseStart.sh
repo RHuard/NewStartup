@@ -42,5 +42,7 @@ if [ "$1" = "-h" ]; then
 fi
 
 $INSTALL"python-pip"
+-#pip
+-$INSTALL"python-pip python-dev build-essential" -y
 
 $HOME/NewStartup/Common.sh
