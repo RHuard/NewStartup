@@ -46,7 +46,5 @@ if [ "$1" = "-h" ]; then
     $INSTALL"steam" -y
 fi
 
-#pip
-$INSTALL"python-pip python-dev build-essential" -y
 
 $HOME/NewStartup/Common.sh
