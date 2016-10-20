@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo pip install --upgrade pip
 sudo pip install --upgrade virtualenv
+sudo pip install ipython
 
 #Make these if not already exist
 mkdir -p $HOME/Programs
@@ -32,5 +33,3 @@ xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
 xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 xmodmap -pke > $HOME/.xmodmap
 xmodmap -e "remove Lock = Caps_Lock"
-
-sudo pip install ipython
