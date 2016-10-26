@@ -10,7 +10,7 @@ INSTALL="sudo apt-get install "
 $INSTALL"build-essential" -y
 $INSTALL"clang" -y
 $INSTALL"python2.7" -y
-$INSTALL"python3.5" -y
+$INSTALL"python3" -y
 $INSTALL"python-pip" -y
 $INSTALL"gcc" -y
 $INSTALL"bcc" -y
