@@ -39,7 +39,6 @@ $INSTALL"source-highlight" -y
 $INSTALL"dict dictd dict-gcide" -y
 $INSTALL"dict-moby-thesaurus" -y
 $INSTALL"aspell" -y
-$INSTALL"exuberant-ctags" -y
 $INSTALL"feh" -y
 
 if [ "$1" = "-h" ]; then
