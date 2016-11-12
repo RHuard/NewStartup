@@ -30,6 +30,7 @@ $INSTALL"ctags" -y
 $INSTALL"colordiff" -y
 $INSTALL"source-highlight" -y
 $INSTALL"dictd" -y
+$INSTALL"aspell-en" -y
 $INSTALL "dict-moby-thesaurus" -y
 $INSTALL"aspell" -y
 $INSTALL"ctags" -y
