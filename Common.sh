@@ -26,3 +26,4 @@ git clone https://github.com/rhuard/RCs.git $HOME/RCs
 $HOME/RCs/firsttimesetup.sh
 
 chsh -s /bin/zsh
+git config --global core.editor "vim"
