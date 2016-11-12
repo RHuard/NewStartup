@@ -8,7 +8,7 @@ $INSTALL="sudo dnf install"
 $INSTALL"python" -y
 $INSTALL"python3" -y
 $INSTALL"clang" -y
-$INSTALL"i3" -y
+$INSTALL"i3 i3status dmenu i3lock xbacklight conky" -y
 $INSTALL"gcc" -y 
 $INSTALL"dev86" #bcc -y
 $INSTALL"cmake" -y
