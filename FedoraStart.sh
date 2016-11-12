@@ -34,6 +34,7 @@ $INSTALL "dict-moby-thesaurus" -y
 $INSTALL"aspell" -y
 $INSTALL"ctags" -y
 $INSTALL"feh" -y
+$INSTALL"util-linux-user" -y
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
