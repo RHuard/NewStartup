@@ -27,3 +27,4 @@ $HOME/RCs/firsttimesetup.sh
 
 chsh -s /bin/zsh
 git config --global core.editor "vim"
+git config --global push.default simple
