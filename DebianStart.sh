@@ -2,7 +2,7 @@
 #Requires git to run, not installed because if you have this then I assume you have git
 
 #TODO: figure out how to do switches better so can have more options
-sudo apt-get update
+sudo apt update
 
 INSTALL="sudo apt-get install "
 
