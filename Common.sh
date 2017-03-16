@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo pip install --upgrade pip
-sudo pip install --upgrade virtualenv
-sudo pip install ipython
+sudo -H pip install --upgrade pip
+sudo -H pip install --upgrade virtualenv
+sudo -H pip install ipython
 
 #Make these if not already exist
 mkdir -p $HOME/Programs
@@ -30,4 +30,4 @@ git config --global core.editor "vim"
 git config --global push.default simple
 git config --global core.excludesfile ~/.gitignore_global
 
-sudo pip install pudb
+sudo -H pip install pudb
