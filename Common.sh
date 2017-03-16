@@ -23,7 +23,7 @@ make -f $HOME/Programs/saspell/Makefile install
 
 #Automatically setup RCs
 git clone https://github.com/rhuard/RCs.git $HOME/RCs
-$HOME/RCs/firsttimesetup.sh
+$HOME/RCs/bin/firsttimesetup.sh
 
 chsh -s /bin/zsh
 git config --global core.editor "vim"
