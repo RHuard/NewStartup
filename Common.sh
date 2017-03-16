@@ -28,5 +28,6 @@ $HOME/RCs/bin/firsttimesetup.sh
 chsh -s /bin/zsh
 git config --global core.editor "vim"
 git config --global push.default simple
+git config --global core.excludesfile ~/.gitignore_global
 
 sudo pip install pudb
