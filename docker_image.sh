@@ -32,5 +32,6 @@ $INSTALL"dict dictd dict-gcide" -y
 $INSTALL"dict-moby-thesaurus" -y
 $INSTALL"aspell" -y
 $INSTALL"feh" -y
+$INSTALL"cal" -y
 
 $HOME/NewStartup/NoSudoCommon.sh
