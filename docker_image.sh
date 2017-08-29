@@ -18,7 +18,7 @@ $INSTALL"tmux" -y
 $INSTALL"zsh" -y
 $INSTALL"ack-grep" -y
 #set ack-grep to use the name ack
-sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
+dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
 $INSTALL"curl" -y
 $INSTALL"ranger" -y
 $INSTALL"pylint" -y
