@@ -23,6 +23,7 @@ make -f $HOME/Programs/saspell/Makefile install
 
 #Automatically setup RCs
 git clone https://github.com/rhuard/RCs.git $HOME/RCs
+cd $HOME/RCs && git checkout docker_image
 $HOME/RCs/bin/firsttimesetup.sh
 
 chsh -s /bin/zsh
