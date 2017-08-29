@@ -2,9 +2,9 @@
 #Requires git to run, not installed because if you have this then I assume you have git
 
 #TODO: figure out how to do switches better so can have more options
-sudo apt update
+apt-get update
 
-INSTALL="sudo apt-get install "
+INSTALL="apt-get install "
 
 #INSTALL PROGRAMS AND TOOLS
 $INSTALL"build-essential" -y
@@ -35,4 +35,4 @@ $INSTALL"dict-moby-thesaurus" -y
 $INSTALL"aspell" -y
 $INSTALL"feh" -y
 
-$HOME/NewStartup/Common.sh
+$HOME/NewStartup/NoSudoCommon.sh
