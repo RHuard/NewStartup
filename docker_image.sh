@@ -32,5 +32,6 @@ $INSTALL"dict-moby-thesaurus" -y
 $INSTALL"aspell" -y
 $INSTALL"feh" -y
 $INSTALL"bsdmainutils" -y
+$INSTALL"iputils-ping" -y
 
 $HOME/NewStartup/NoSudoCommon.sh
