@@ -27,7 +27,7 @@ $INSTALL"exuberant-ctags" -y
 $INSTALL"colordiff" -y
 $INSTALL"diffuse" -y
 $INSTALL"source-highlight" -y
-$INSTALL"dict dictd dict-gcide" -y
+$INSTALL"dict dictd" -y
 $INSTALL"dict-moby-thesaurus" -y
 $INSTALL"aspell" -y
 $INSTALL"feh" -y
