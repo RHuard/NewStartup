@@ -1,7 +1,6 @@
 #!/bin/bash
 #Requires git to run, not installed because if you have this then I assume you have git
 
-#TODO: figure out how to do switches better so can have more options
 INSTALL="apt-get install "
 
 #INSTALL PROGRAMS AND TOOLS
