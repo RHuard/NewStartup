@@ -12,3 +12,6 @@ execute the command for the distro you are running
 
 ### Suse based systems:
 `$HOME/NewStartup/SuseStart.sh`
+
+### Red Hat/Fedora based systems:
+`$HOME/NewStartup/FedoraStart.sh`

@@ -2,7 +2,7 @@
 #Requires git to run, not installed because if you have this then I assume you have git
 
 #TODO: figure out how to do switches better so can have more options
-sudo apt-get update
+sudo apt update
 
 INSTALL="sudo apt-get install "
 
@@ -10,7 +10,7 @@ INSTALL="sudo apt-get install "
 $INSTALL"build-essential" -y
 $INSTALL"clang" -y
 $INSTALL"python2.7" -y
-$INSTALL"python3.4" -y
+$INSTALL"python3" -y
 $INSTALL"python-pip" -y
 $INSTALL"gcc" -y
 $INSTALL"bcc" -y
@@ -39,9 +39,9 @@ $INSTALL"source-highlight" -y
 $INSTALL"dict dictd dict-gcide" -y
 $INSTALL"dict-moby-thesaurus" -y
 $INSTALL"aspell" -y
-$INSTALL"exuberant-ctags" -y
 $INSTALL"feh" -y
 $INSTALL"lua5.3" -y
+$INSTALL"xcompmgr" -y
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y

@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo -H pip install --upgrade pip
-sudo -H pip install --upgrade virtualenv
-sudo -H pip install ipython
+pip install --upgrade pip
+pip install --upgrade virtualenv
+pip install ipython
 
 #Make these if not already exist
 mkdir -p $HOME/Programs
@@ -23,6 +23,7 @@ make -f $HOME/Programs/saspell/Makefile install
 
 #Automatically setup RCs
 git clone https://github.com/rhuard/RCs.git $HOME/RCs
+cd $HOME/RCs && git checkout docker_image
 $HOME/RCs/bin/firsttimesetup.sh
 
 chsh -s /bin/zsh
@@ -30,4 +31,4 @@ git config --global core.editor "vim"
 git config --global push.default simple
 git config --global core.excludesfile ~/.gitignore_global
 
-sudo -H pip install pudb
+pip install pudb
