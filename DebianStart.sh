@@ -43,6 +43,8 @@ $INSTALL"feh" -y
 $INSTALL"lua5.3" -y
 $INSTALL"xcompmgr" -y
 $INSTALL"xclip" -y
+$INSTALL"libncurses5-dev libncursesw5-dev" -y
+$INSTALL"xbacklight -y"
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
