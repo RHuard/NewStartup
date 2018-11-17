@@ -42,6 +42,7 @@ $INSTALL"aspell" -y
 $INSTALL"feh" -y
 $INSTALL"lua5.3" -y
 $INSTALL"xcompmgr" -y
+$INSTALL"xclip" -y
 
 if [ "$1" = "-h" ]; then
     $INSTALL"nautilus-dropbox" -y
