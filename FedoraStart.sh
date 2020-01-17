@@ -5,7 +5,6 @@ sudo dnf check-update && sudo dnf upgrade -y
 $INSTALL="sudo dnf install"
 
 #Install software
-$INSTALL"python" -y
 $INSTALL"python3" -y
 $INSTALL"clang" -y
 $INSTALL"i3 i3status dmenu i3lock xbacklight conky" -y

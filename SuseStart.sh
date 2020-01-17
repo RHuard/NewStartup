@@ -6,7 +6,6 @@ $INSTALL="sudo Zypper install"
 
 #Install software
 $INSTALL"-t pattern devel_basis"
-$INSTALL"python"
 $INSTALL"python3"
 $INSTALL"llvm-clang"
 $INSTALL"i3"
