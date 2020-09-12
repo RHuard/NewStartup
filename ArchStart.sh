@@ -9,6 +9,7 @@ lib32-mesa \
 vulkan-intel \
 xorg-server \
 lightdm \
+lightdm-gtk-greeter \
 plasma-desktop \
 i3 \
 vivaldi-stable \
