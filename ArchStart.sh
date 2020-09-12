@@ -12,6 +12,7 @@ lightdm \
 lightdm-gtk-greeter \
 plasma-desktop \
 i3 \
+dmenu \
 vivaldi-stable \
 firefox \
 terminator \
