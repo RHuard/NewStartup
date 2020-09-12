@@ -2,6 +2,8 @@ INSTALL="sudo pacman -S "
 
 # right now all my laptops have built in intel chips, need to expand/add options for different platforms
 $INSTALL base-devel \
+python \
+python-pip \
 mesa \
 lib32-mesa \
 vulkan-intel \
